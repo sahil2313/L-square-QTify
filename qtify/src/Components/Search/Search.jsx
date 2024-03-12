@@ -11,7 +11,7 @@ function Search({ placeholder }) {
         <input
           className={styles.search}
           placeholder={placeholder}
-          tyep="text"
+          type="text"
           required
         />
         <button type="submit" className={styles.searchButton}>
