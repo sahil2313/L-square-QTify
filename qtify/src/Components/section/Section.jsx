@@ -4,7 +4,7 @@ import styles from "./Section.module.css";
 import Card from "../Card/Card";
 
 export default function Section({ title, data, type }) {
-  const [carouselToggle, setCarouselToggle] = useState(true);
+  const [carouselToggle, setCarouselToggle] = useState(false);
 
   const handleToggel = () => {
     setCarouselToggle((prev) => !prev);
