@@ -1,45 +1,45 @@
-:root{
-  --color-primary : #34c94b;
+:root {
+  --color-primary: #34c94b;
   --color-black: #121212;
-  --color-white : #ffffff
+  --color-white: #ffffff;
 }
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: border-box;
 }
 
-*{
+* {
   margin: 0;
 }
 html,
-body{
+body {
   height: 100%;
 }
 
-body{
-  font-family:  "Poppins" , sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
-  -webkit-font-smoothing : antialiased;
+  -webkit-font-smoothing: antialiased;
   background-color: var(--color-black);
-  color : var(--color-white)
+  color: var(--color-white);
 }
 
 img,
 picture,
 video,
 canvas,
-svg{
+svg {
   display: block;
   max-width: 100%;
 }
 
 input,
-button ,
+button,
 textarea,
-select{
-  font : inherit
+select {
+  font: inherit;
 }
 
 p,
@@ -54,4 +54,12 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
