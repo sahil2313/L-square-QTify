@@ -30,10 +30,11 @@ function Carousel({ data, renderElement }) {
         allowTouchMove
       >
         <Controls data={data} />
+        {/* if any data changes then carousel will start from 0(first index) */}
         <CarouselLeftNavigation />
         <CarouselRightNavigation />
         {data.map((ele) => (
-          <SwiperSlide>{renderElement(ele)}</SwiperSlide>
+          <SwiperSlide key={ele.id}>{renderElement(ele)}</SwiperSlide>
         ))}
       </Swiper>
     </div>

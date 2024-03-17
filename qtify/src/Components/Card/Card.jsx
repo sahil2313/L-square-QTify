@@ -32,7 +32,7 @@ const Card = ({ data, type }) => {
         );
       }
       case "song": {
-        const { title, image, likes, songs, slug, follows } = data;
+        const { title, image, likes } = data;
         return (
           <div className={styles.wrapper}>
             <div className={styles.card}>
@@ -40,9 +40,11 @@ const Card = ({ data, type }) => {
                 <img src={image} alt="songs" loading="lazy" />
               </div>
               <div className={styles.banner}>
-                <div className={styles.pill}>
-                  <p>{likes}</p>
-                </div>
+                <Chip
+                  label={`${likes} likes`}
+                  size="small"
+                  className={styles.chip}
+                />
               </div>
             </div>
             <div className={styles.titleWrapper}>
