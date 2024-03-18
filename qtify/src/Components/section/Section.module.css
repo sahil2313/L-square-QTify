@@ -30,3 +30,11 @@
   border-top: 1.5px solid var(--color-primary);
   border-bottom: 1.5px solid var(--color-primary);
 }
+
+.circularProgress {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

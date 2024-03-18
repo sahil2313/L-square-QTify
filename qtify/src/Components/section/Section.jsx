@@ -50,7 +50,9 @@ export default function Section({ title, data, type, filterSource }) {
         </div>
       )}
       {data.length == 0 ? (
-        <CircularProgress />
+        <div className={styles.circularProgress}>
+          <CircularProgress color="success" />
+        </div>
       ) : (
         <div className={styles.cardWrapper}>
           {!carouselToggle ? (
