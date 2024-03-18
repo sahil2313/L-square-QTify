@@ -31,7 +31,7 @@ export default function Section({ title, data, type, filterSource }) {
   );
 
   return (
-    <div>
+    <div className={showFilters ? styles.sectionWrapper : null}>
       <div className={styles.header}>
         <h3>{title}</h3>
         {!showFilters && (

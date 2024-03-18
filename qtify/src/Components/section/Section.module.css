@@ -23,3 +23,10 @@
 .filterWrapper {
   margin-top: 15px;
 }
+
+.sectionWrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1.5px solid var(--color-primary);
+  border-bottom: 1.5px solid var(--color-primary);
+}
