@@ -1,0 +1,7 @@
+.songsTableContainer {
+    background-color: var(--color-black) !important;
+    color: var(--color-white) !important;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
