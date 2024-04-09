@@ -1,0 +1,30 @@
+.formContainer {
+    background: #fff;
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+    width: 30rem !important; /* Set the width of the form container */
+    height: 32.75rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+  }
+  
+  .title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 0;
+    padding: 0;
+    padding-top: 1.2rem;
+    width: 100%;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
