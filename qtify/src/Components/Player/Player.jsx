@@ -1,10 +1,11 @@
-// Player.js
-
 import React from "react";
 import styles from "./Player.module.css"; // Import your CSS module
 import ProgressBar from "../../Components/ProgressBar/ProgressBar"; // Import your ProgressBar component
+import AudioPlayer from "../../Components/AudioPlayer/AudioPlayer";
 
 export default function Player() {
+  const audioUrl =
+    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
   return (
     <div className={styles.wrapper}>
       <div className={styles.songDetail}>
@@ -14,18 +15,7 @@ export default function Player() {
           <h5>Album name</h5>
         </div>
       </div>
-      <div className={styles.playSection}>
-        <img
-          src={require("../../assets/play.png")}
-          style={{ width: "30px", height: "30px" }}
-          alt="playButton"
-        />
-        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <p>0:38</p>
-          <ProgressBar />
-          <p>3:38</p>
-        </div>
-      </div>
+      <AudioPlayer audioUrl={audioUrl} />
     </div>
   );
 }

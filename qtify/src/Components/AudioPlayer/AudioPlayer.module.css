@@ -1,0 +1,13 @@
+.playSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Center children horizontally */
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .playBtn {
+    font-size: 48px !important ;
+    cursor: pointer;
+  }
